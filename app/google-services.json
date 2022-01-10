@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "114245048437",
+    "firebase_url": "https://prestige-messenger-default-rtdb.firebaseio.com",
+    "project_id": "prestige-messenger",
+    "storage_bucket": "prestige-messenger.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:114245048437:android:a96f36e00c368c3e99403c",
+        "android_client_info": {
+          "package_name": "com.prof.prestigemessenger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "114245048437-8dtcktmgt8n4p3u7f2qjq0v24kr3pemf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prof.prestigemessenger",
+            "certificate_hash": "97c76c2e279e8d9d002b906f21a79c229efa1bd7"
+          }
+        },
+        {
+          "client_id": "114245048437-f47pfsoqsna6ha9oon2pr14satv8d9c1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.prof.prestigemessenger",
+            "certificate_hash": "20fcc4aeb79e454846cea0f6159bc3bc18dcc3b9"
+          }
+        },
+        {
+          "client_id": "114245048437-qv15gr8k26mcg1nppk899qegb4c3imqm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB9Wbi3PzMM1uru1HuN5EZYocRnf42ppTc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "114245048437-qv15gr8k26mcg1nppk899qegb4c3imqm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
