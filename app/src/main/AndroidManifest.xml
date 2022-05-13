@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.prof.prestigemessenger">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CAPTURE_AUDIO_OUTPUT"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS"/>
+<!--    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY"/>-->
+<!--    <uses-permission android:name="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"-->
+<!--        tools:ignore="ProtectedPermissions" />-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/img_logo_with_back"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/img_logo_with_back_oval"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.PrestigeMessenger">
+        <activity
+            android:name=".activity.OutgoingInvitationActivity"
+            android:exported="true"
+            android:screenOrientation="fullSensor"/>
+        <activity
+            android:name=".activity.IncomingInvitationActivity"
+            android:screenOrientation="fullSensor"
+            android:exported="true"
+            />
+        <activity
+            android:name=".activity.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="fullSensor"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activity.TestActivity"
+            android:exported="true">
+
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".activity.ChatActivity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".activity.UsersListActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.HomeActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.VerifyOTPActivity"
+            android:exported="true" />
+        <activity
+            android:name=".activity.LoginActivity"
+            android:exported="true">
+            <!-- <intent-filter> -->
+            <!-- <action android:name="android.intent.action.MAIN" /> -->
+
+
+            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+            <!-- </intent-filter> -->
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+        <service
+            android:name=".firebase.MassagingService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+<!--    <meta-data-->
+<!--        android:name="com.google.android.gms.version"-->
+<!--        android:value="@integer/google_play_services_version" />-->
+
+</manifest>
